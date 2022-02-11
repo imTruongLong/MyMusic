@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+</resources>

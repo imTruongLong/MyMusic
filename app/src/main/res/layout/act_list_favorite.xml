@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tr_list_favorite"
+        android:layout_height="56dp"
+        android:background="@color/purple_700"
+        android:layout_width="match_parent">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_list"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="List Favorites"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_add"/>
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_favorite"
+        tools:listitem="@layout/item_list_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
